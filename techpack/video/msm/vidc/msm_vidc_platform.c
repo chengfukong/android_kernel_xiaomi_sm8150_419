@@ -1736,7 +1736,7 @@ static struct msm_vidc_common_data sm8150_common_data[] = {
 	},
 	{
 		.key = "qcom,max-secure-instances",
-		.value = 3,             /*
+		.value = 2,             /*
 					 * As per design driver allows 3rd
 					 * instance as well since the secure
 					 * flags were updated later for the
