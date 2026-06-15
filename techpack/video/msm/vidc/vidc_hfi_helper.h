@@ -601,13 +601,12 @@ struct hfi_profile_level {
 };
 
 #ifdef CONFIG_MSMNILE_SUPPORT
-struct hfi_dpb_counts_msmnile {
+struct hfi_dpb_counts {
 	u32 max_dpb_count;
 	u32 max_ref_frames;
 	u32 max_dec_buffering;
 };
-#endif
-
+#else
 struct hfi_dpb_counts {
 	u32 max_dpb_count;
 	u32 max_ref_frames;
@@ -615,6 +614,7 @@ struct hfi_dpb_counts {
 	u32 max_reorder_frames;
 	u32 fw_min_cnt;
 };
+#endif
 
 struct hfi_profile_level_supported {
 	u32 profile_count;
