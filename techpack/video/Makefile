@@ -9,11 +9,11 @@ ifeq ($(CONFIG_ARCH_KONA), y)
 LINUXINCLUDE    += -include $(srctree)/techpack/video/config/konavidconf.h
 endif
 
-ifeq ($(CONFIG_ARCH_SM8150), y)
+ifeq ($(""), y)
 include $(srctree)/techpack/video/config/msmnilevid.conf
 endif
 
-ifeq ($(CONFIG_ARCH_SM8150), y)
+ifeq ($(""), y)
 LINUXINCLUDE    += -include $(srctree)/techpack/video/config/msmnilevidconf.h
 endif
 
